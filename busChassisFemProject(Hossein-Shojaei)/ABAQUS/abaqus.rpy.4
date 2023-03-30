@@ -1,0 +1,356 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2021 replay file
+# Internal Version: 2020_03_06-18.20.37 167380
+# Run by Administrator on Fri Jul  2 13:22:42 2021
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=116.682289123535, 
+    height=117.208335876465)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+Mdb()
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+openMdb(pathName='C:/temp/Feeeem.cae')
+#: The model database "C:\temp\Feeeem.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+p = mdb.models['Model-1'].parts['Truss_Part']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+a = mdb.models['Model-1'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(
+    optimizationTasks=OFF, geometricRestrictions=OFF, stopConditions=OFF)
+o3 = session.openOdb(name='C:/temp/Job-1.odb')
+#: Model: C:/temp/Job-1.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     1
+#: Number of Meshes:             1
+#: Number of Element Sets:       4
+#: Number of Node Sets:          15
+#: Number of Steps:              1
+session.viewports['Viewport: 1'].setValues(displayedObject=o3)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='U', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(
+    plotState=CONTOURS_ON_DEF)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(INVARIANT, 
+    'Mises'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='TF', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(INVARIANT, 
+    'Mises'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(INVARIANT, 
+    'Pressure'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(COMPONENT, 
+    'S11'), )
+session.Path(name='Path-1', type=EDGE_LIST, expression=(('TRUSS_PART-1', ((10, 
+    1, 1, 1), )), ))
+xyp = session.XYPlot('XYPlot-1')
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-1']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    UNDEFORMED, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.Path(name='Path-1', type=EDGE_LIST, expression=(('TRUSS_PART-1', ((10, 
+    1, 1, 1), )), ))
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-1']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.Path(name='Path-2', type=EDGE_LIST, expression=(('TRUSS_PART-1', ((4, 
+    1, 1, 1), )), ))
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-2']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7768.06, 
+    farPlane=12541.5, width=3794.36, height=1526.61, viewOffsetX=86.942, 
+    viewOffsetY=-18.8108)
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-2']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.Path(name='Path-3', type=EDGE_LIST, expression=(('TRUSS_PART-1', ((21, 
+    1, 1, 1), )), ))
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-3']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.Path(name='Path-4', type=EDGE_LIST, expression=(('TRUSS_PART-1', ((9, 
+    1, 1, 1), )), ))
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-4']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.Path(name='Path-5', type=EDGE_LIST, expression=(('TRUSS_PART-1', ((22, 
+    1, 1, 1), )), ))
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-5']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+del session.paths['Path-1']
+del session.paths['Path-2']
+session.Path(name='Path-6', type=EDGE_LIST, expression=(('TRUSS_PART-1', ((9, 
+    1, 1, 1), )), ))
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-6']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    DEFORMED, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='U', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.Path(name='Path-7', type=EDGE_LIST, expression=(('TRUSS_PART-1', ((21, 
+    1, 1, 1), )), ))
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-3']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(INVARIANT, 
+    'Mises'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(COMPONENT, 
+    'S11'), )
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendNumberFormat=FIXED)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendDecimalPlaces=1)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendNumberFormat=ENGINEERING)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendDecimalPlaces=3, legendNumberFormat=SCIENTIFIC)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendNumberFormat=ENGINEERING)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendPosition=(2, 9))
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendPosition=(2, 90))
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendPosition=(2, 98))
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendMinMax=ON)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendTitle=OFF, legendMinMax=OFF)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendTitle=ON)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    legendBox=OFF)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7818.28, 
+    farPlane=12491.3, width=3818.89, height=1536.48, viewOffsetX=-70.7115, 
+    viewOffsetY=-62.4763)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    compass=OFF)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(triad=OFF)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(title=OFF)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(
+    annotations=OFF)
+session.viewports['Viewport: 1'].viewportAnnotationOptions.setValues(state=OFF)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7818.5, 
+    farPlane=12491.1, width=3819, height=1536.52, viewOffsetX=-194.808, 
+    viewOffsetY=108.592)
+session.graphicsOptions.setValues(backgroundStyle=SOLID, 
+    backgroundColor='#FFFFFF')
+session.graphicsOptions.setValues(backgroundStyle=GRADIENT)
+session.graphicsOptions.setValues(backgroundColor='#1B2D46')
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7821.86, 
+    farPlane=12487.7, width=3438.58, height=1383.47, viewOffsetX=-62.2687, 
+    viewOffsetY=97.6147)
+session.viewports['Viewport: 1'].view.fitView()
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7930.33, 
+    farPlane=12530.7, width=3478.21, height=1399.41, viewOffsetX=-302.33, 
+    viewOffsetY=11.3313)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7770.84, 
+    farPlane=12690.2, width=4207.73, height=1692.92, viewOffsetX=-158.242, 
+    viewOffsetY=104.241)
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-7']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+del session.paths['Path-3']
+del session.paths['Path-4']
+del session.paths['Path-5']
+del session.paths['Path-6']
+del session.paths['Path-7']
+session.Path(name='Path-1', type=EDGE_LIST, expression=(('TRUSS_PART-1', ((9, 
+    1, 1, 1), )), ))
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-1']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.Path(name='Path-2', type=EDGE_LIST, expression=(('TRUSS_PART-1', ((22, 
+    1, 1, 1), )), ))
+xyp = session.xyPlots['XYPlot-1']
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+pth = session.paths['Path-2']
+xy1 = xyPlot.XYDataFromPath(path=pth, includeIntersections=False, 
+    projectOntoMesh=False, pathStyle=PATH_POINTS, numIntervals=10, 
+    projectionTolerance=0, shape=DEFORMED, labelType=TRUE_DISTANCE, 
+    removeDuplicateXYPairs=True, includeAllElements=False)
+c1 = session.Curve(xyData=xy1)
+chart.setValues(curvesToPlot=(c1, ), )
+session.charts[chartName].autoColor(lines=True, symbols=True)
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+mdb.save()
+#: The model database has been saved to "C:\temp\Feeeem.cae".

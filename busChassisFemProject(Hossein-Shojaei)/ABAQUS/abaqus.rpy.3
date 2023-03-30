@@ -1,0 +1,690 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 2021 replay file
+# Internal Version: 2020_03_06-18.20.37 167380
+# Run by Administrator on Thu Jul  1 17:06:20 2021
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=116.682289123535, 
+    height=117.208335876465)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+Mdb()
+#: A new model database has been created.
+#: The model "Model-1" has been created.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+s = mdb.models['Model-1'].ConstrainedSketch(name='__profile__', 
+    sheetSize=200.0)
+g, v, d, c = s.geometry, s.vertices, s.dimensions, s.constraints
+s.setPrimaryObject(option=STANDALONE)
+s.Line(point1=(-60.0, 20.0), point2=(58.75, 20.0))
+s.HorizontalConstraint(entity=g[2], addUndoState=False)
+s.Line(point1=(58.75, 20.0), point2=(58.75, 0.0))
+s.VerticalConstraint(entity=g[3], addUndoState=False)
+s.PerpendicularConstraint(entity1=g[2], entity2=g[3], addUndoState=False)
+s.Line(point1=(58.75, 0.0), point2=(46.25, -6.25))
+s.Line(point1=(46.25, -6.25), point2=(-60.0, 7.5))
+s.Line(point1=(-60.0, 7.5), point2=(-60.0, 20.0))
+s.VerticalConstraint(entity=g[6], addUndoState=False)
+s.Line(point1=(-26.25, 20.0), point2=(-26.25, 3.13235294130652))
+s.VerticalConstraint(entity=g[7], addUndoState=False)
+s.PerpendicularConstraint(entity1=g[2], entity2=g[7], addUndoState=False)
+s.CoincidentConstraint(entity1=v[6], entity2=g[5], addUndoState=False)
+s.Line(point1=(-26.25, 3.13235294130652), point2=(-60.0, 20.0))
+s.Line(point1=(-60.0, 7.5), point2=(-26.25, 20.0))
+s.breakCurve(curve1=g[8], point1=(-45.8107261657715, 13.544059753418), 
+    curve2=g[9], point2=(-49.288330078125, 11.1302719116211))
+s.Line(point1=(15.0, 20.0), point2=(15.0, -2.2058823529763))
+s.VerticalConstraint(entity=g[12], addUndoState=False)
+s.PerpendicularConstraint(entity1=g[2], entity2=g[12], addUndoState=False)
+s.CoincidentConstraint(entity1=v[8], entity2=g[2], addUndoState=False)
+s.CoincidentConstraint(entity1=v[9], entity2=g[5], addUndoState=False)
+s.Line(point1=(15.0, -2.2058823529763), point2=(-26.25, 20.0))
+s.Line(point1=(46.25, -6.25), point2=(46.25, 20.0))
+s.VerticalConstraint(entity=g[14], addUndoState=False)
+s.CoincidentConstraint(entity1=v[10], entity2=g[2], addUndoState=False)
+#: Warning: Coincident point selected.
+s.Line(point1=(46.25, 20.0), point2=(58.75, 0.0))
+s.Line(point1=(15.0, 20.0), point2=(46.25, -6.25))
+s.Line(point1=(46.25, -6.25), point2=(58.75, 20.0))
+s.breakCurve(curve1=g[15], point1=(51.2946624755859, 9.92337036132813), 
+    curve2=g[17], point2=(52.4984436035156, 5.76628494262695))
+s.ObliqueDimension(vertex1=v[4], vertex2=v[0], textPoint=(-63.3324966430664, 
+    13.2758636474609), value=0.4)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=185.488, 
+    farPlane=191.636, width=24.7133, height=10.5066, cameraPosition=(-50.9897, 
+    16.6438, 188.562), cameraTarget=(-50.9897, 16.6438, 0))
+s.undo()
+session.viewports['Viewport: 1'].view.setValues(nearPlane=170.131, 
+    farPlane=206.993, width=148.186, height=63.0001, cameraPosition=(-18.232, 
+    -2.80946, 188.562), cameraTarget=(-18.232, -2.80946, 0))
+s.unsetPrimaryObject()
+del mdb.models['Model-1'].sketches['__profile__']
+s1 = mdb.models['Model-1'].ConstrainedSketch(name='__profile__', 
+    sheetSize=1000.0)
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=STANDALONE)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=750.135, 
+    farPlane=1135.48, width=1549.1, height=658.587, cameraPosition=(214.334, 
+    -90.4479, 942.809), cameraTarget=(214.334, -90.4479, 0))
+s1.Line(point1=(-360.0, 55.0), point2=(-360.0, -200.0))
+s1.VerticalConstraint(entity=g[2], addUndoState=False)
+s1.Line(point1=(-360.0, -200.0), point2=(785.0, -370.0))
+s1.Line(point1=(785.0, -370.0), point2=(790.0, 100.0))
+s1.Line(point1=(790.0, 100.0), point2=(-360.0, 55.0))
+s1.unsetPrimaryObject()
+del mdb.models['Model-1'].sketches['__profile__']
+s = mdb.models['Model-1'].ConstrainedSketch(name='__profile__', 
+    sheetSize=1000.0)
+g, v, d, c = s.geometry, s.vertices, s.dimensions, s.constraints
+s.setPrimaryObject(option=STANDALONE)
+s.unsetPrimaryObject()
+del mdb.models['Model-1'].sketches['__profile__']
+s1 = mdb.models['Model-1'].ConstrainedSketch(name='__profile__', 
+    sheetSize=10000.0)
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=STANDALONE)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7287.27, 
+    farPlane=11568.9, width=17212.2, height=7317.63, cameraPosition=(3459.63, 
+    534.701, 9428.09), cameraTarget=(3459.63, 534.701, 0))
+s1.Line(point1=(0.0, 0.0), point2=(0.0, 4050.0))
+s1.VerticalConstraint(entity=g[2], addUndoState=False)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=3620.75, 
+    farPlane=15235.4, width=52527.6, height=22331.6, cameraPosition=(12654.2, 
+    534.701, 9428.09), cameraTarget=(12654.2, 534.701, 0))
+s1.ObliqueDimension(vertex1=v[0], vertex2=v[1], textPoint=(-1789.7802734375, 
+    1818.12841796875), value=400.0)
+s1.unsetPrimaryObject()
+del mdb.models['Model-1'].sketches['__profile__']
+s = mdb.models['Model-1'].ConstrainedSketch(name='__profile__', 
+    sheetSize=10000.0)
+g, v, d, c = s.geometry, s.vertices, s.dimensions, s.constraints
+s.setPrimaryObject(option=STANDALONE)
+s.Line(point1=(0.0, 0.0), point2=(0.0, 400.0))
+s.VerticalConstraint(entity=g[2], addUndoState=False)
+s.Line(point1=(0.0, 400.0), point2=(1000.0, 400.0))
+s.HorizontalConstraint(entity=g[3], addUndoState=False)
+s.PerpendicularConstraint(entity1=g[2], entity2=g[3], addUndoState=False)
+s.Line(point1=(1000.0, 400.0), point2=(2000.0, 400.0))
+s.HorizontalConstraint(entity=g[4], addUndoState=False)
+s.ParallelConstraint(entity1=g[3], entity2=g[4], addUndoState=False)
+s.Line(point1=(2000.0, 400.0), point2=(3000.0, 400.0))
+s.HorizontalConstraint(entity=g[5], addUndoState=False)
+s.ParallelConstraint(entity1=g[4], entity2=g[5], addUndoState=False)
+s.Line(point1=(3000.0, 400.0), point2=(3500.0, 400.0))
+s.HorizontalConstraint(entity=g[6], addUndoState=False)
+s.ParallelConstraint(entity1=g[5], entity2=g[6], addUndoState=False)
+s.Line(point1=(3500.0, 400.0), point2=(3500.0, 0.0))
+s.VerticalConstraint(entity=g[7], addUndoState=False)
+s.PerpendicularConstraint(entity1=g[6], entity2=g[7], addUndoState=False)
+s.Line(point1=(3500.0, 0.0), point2=(3000.0, -400.0))
+s.Line(point1=(3000.0, -400.0), point2=(0.0, 0.0))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=8756.28, 
+    farPlane=10099.9, width=4375.12, height=1860.04, cameraPosition=(1493.51, 
+    -24.4478, 9428.09), cameraTarget=(1493.51, -24.4478, 0))
+session.viewports['Viewport: 1'].view.setValues(cameraPosition=(1880.91, 
+    132.337, 9428.09), cameraTarget=(1880.91, 132.337, 0))
+s.Line(point1=(1000.0, 400.0), point2=(1000.0, -133.333333333293))
+s.VerticalConstraint(entity=g[10], addUndoState=False)
+s.PerpendicularConstraint(entity1=g[3], entity2=g[10], addUndoState=False)
+s.CoincidentConstraint(entity1=v[8], entity2=g[9], addUndoState=False)
+s.Line(point1=(0.0, 400.0), point2=(1000.0, -133.333333333293))
+s.Line(point1=(0.0, 0.0), point2=(1000.0, 400.0))
+s.Line(point1=(2000.0, 400.0), point2=(2000.0, -266.666666666589))
+s.VerticalConstraint(entity=g[13], addUndoState=False)
+s.PerpendicularConstraint(entity1=g[4], entity2=g[13], addUndoState=False)
+s.CoincidentConstraint(entity1=v[9], entity2=g[9], addUndoState=False)
+s.Line(point1=(1000.0, 400.0), point2=(2000.0, -266.666666666589))
+s.Line(point1=(3000.0, 400.0), point2=(3000.0, -400.0))
+s.VerticalConstraint(entity=g[15], addUndoState=False)
+s.PerpendicularConstraint(entity1=g[5], entity2=g[15], addUndoState=False)
+#: Warning: Coincident point selected.
+s.Line(point1=(2000.0, 400.0), point2=(3000.0, -400.0))
+s.Line(point1=(3000.0, -400.0), point2=(3500.0, 400.0))
+s.Line(point1=(3000.0, 400.0), point2=(3500.0, 0.0))
+s.breakCurve(curve1=g[12], point1=(265.563354492188, 107.393951416016), 
+    curve2=g[11], point2=(297.550415039063, 242.799407958984))
+s.breakCurve(curve1=g[18], point1=(3133.73681640625, 264.179290771484), 
+    curve2=g[17], point2=(3254.57666015625, 43.2544860839844))
+p = mdb.models['Model-1'].Part(name='Truss_Part', dimensionality=TWO_D_PLANAR, 
+    type=DEFORMABLE_BODY)
+p = mdb.models['Model-1'].parts['Truss_Part']
+p.BaseWire(sketch=s)
+s.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Truss_Part']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+del mdb.models['Model-1'].sketches['__profile__']
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=ON, 
+    engineeringFeatures=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=OFF, 
+    engineeringFeatures=OFF)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=ON, 
+    engineeringFeatures=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+mdb.models['Model-1'].Material(name='Material-1')
+mdb.models['Model-1'].materials['Material-1'].Elastic(table=((210000000000.0, 
+    0.3), ))
+mdb.models['Model-1'].Material(name='Material-2')
+mdb.models['Model-1'].materials['Material-2'].Elastic(table=((200000000000.0, 
+    0.3), ))
+mdb.models['Model-1'].Material(name='Material-3')
+mdb.models['Model-1'].materials['Material-3'].Elastic(table=((195000000000.0, 
+    0.3), ))
+mdb.models['Model-1'].TrussSection(name='Section-1', material='Material-1', 
+    area=0.000924)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+edges = e.getSequenceFromMask(mask=('[#404024 ]', ), )
+region = p.Set(edges=edges, name='Set-1')
+p = mdb.models['Model-1'].parts['Truss_Part']
+p.SectionAssignment(region=region, sectionName='Section-1', offset=0.0, 
+    offsetType=MIDDLE_SURFACE, offsetField='', 
+    thicknessAssignment=FROM_SECTION)
+mdb.models['Model-1'].TrussSection(name='Section-2', material='Material-2', 
+    area=0.000684)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+edges = e.getSequenceFromMask(mask=('[#148012 ]', ), )
+region = p.Set(edges=edges, name='Set-2')
+p = mdb.models['Model-1'].parts['Truss_Part']
+p.SectionAssignment(region=region, sectionName='Section-2', offset=0.0, 
+    offsetType=MIDDLE_SURFACE, offsetField='', 
+    thicknessAssignment=FROM_SECTION)
+mdb.models['Model-1'].TrussSection(name='Section-3', material='Material-3', 
+    area=0.000384)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+edges = e.getSequenceFromMask(mask=('[#2b3fc9 ]', ), )
+region = p.Set(edges=edges, name='Set-3')
+p = mdb.models['Model-1'].parts['Truss_Part']
+p.SectionAssignment(region=region, sectionName='Section-3', offset=0.0, 
+    offsetType=MIDDLE_SURFACE, offsetField='', 
+    thicknessAssignment=FROM_SECTION)
+mdb.models['Model-1'].BoxProfile(name='Profile-1', b=0.1, a=0.06, 
+    uniformThickness=ON, t1=0.003)
+mdb.models['Model-1'].BoxProfile(name='Profile-2', b=0.06, a=0.06, 
+    uniformThickness=ON, t1=0.003)
+mdb.models['Model-1'].BoxProfile(name='Profile-3', b=0.06, a=0.04, 
+    uniformThickness=ON, t1=0.002)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7151.13, 
+    farPlane=7209.93, width=191.543, height=77.0647, viewOffsetX=-702.98, 
+    viewOffsetY=-126.068)
+a = mdb.models['Model-1'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(
+    optimizationTasks=OFF, geometricRestrictions=OFF, stopConditions=OFF)
+a = mdb.models['Model-1'].rootAssembly
+a.DatumCsysByDefault(CARTESIAN)
+p = mdb.models['Model-1'].parts['Truss_Part']
+a.Instance(name='Truss_Part-1', part=p, dependent=ON)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(
+    renderBeamProfiles=ON)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(beamScaleFactor=8.0)
+p = mdb.models['Model-1'].parts['Truss_Part']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=6299.25, 
+    farPlane=8061.8, width=6996.47, height=2814.94, viewOffsetX=1533.59, 
+    viewOffsetY=637.454)
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=OFF, 
+    engineeringFeatures=OFF)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+s1 = mdb.models['Model-1'].ConstrainedSketch(name='__profile__', 
+    sheetSize=10000.0)
+g, v, d, c = s1.geometry, s1.vertices, s1.dimensions, s1.constraints
+s1.setPrimaryObject(option=STANDALONE)
+s1.Line(point1=(-2600.0, 1150.0), point2=(1900.0, -350.0))
+s1.Line(point1=(1900.0, -350.0), point2=(1000.0, -700.0))
+s1.Line(point1=(1000.0, -700.0), point2=(-1800.0, -700.0))
+s1.HorizontalConstraint(entity=g[4], addUndoState=False)
+s1.Line(point1=(-1800.0, -700.0), point2=(-2600.0, 1150.0))
+p = mdb.models['Model-1'].Part(name='Part-2', dimensionality=THREE_D, 
+    type=DEFORMABLE_BODY)
+p = mdb.models['Model-1'].parts['Part-2']
+p.BaseWire(sketch=s1)
+s1.unsetPrimaryObject()
+p = mdb.models['Model-1'].parts['Part-2']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+del mdb.models['Model-1'].sketches['__profile__']
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=ON, 
+    engineeringFeatures=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+mdb.models['Model-1'].BoxProfile(name='Profile-4', b=83538.0, a=5383.0, 
+    uniformThickness=ON, t1=22.0)
+del mdb.models['Model-1'].profiles['Profile-4']
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=OFF, 
+    engineeringFeatures=OFF)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+del mdb.models['Model-1'].parts['Part-2']
+p = mdb.models['Model-1'].parts['Truss_Part']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=ON, 
+    engineeringFeatures=ON)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=OFF)
+a = mdb.models['Model-1'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(
+    adaptiveMeshConstraints=ON)
+mdb.models['Model-1'].StaticStep(name='Step-1', previous='Initial')
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(step='Step-1')
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(loads=ON, bcs=ON, 
+    predefinedFields=ON, connectors=ON, adaptiveMeshConstraints=OFF)
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#800 ]', ), )
+region = a.Set(vertices=verts1, name='Set-1')
+mdb.models['Model-1'].ConcentratedForce(name='Load-1', createStepName='Step-1', 
+    region=region, cf2=-2500.0, distributionType=UNIFORM, field='', 
+    localCsys=None)
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#400 ]', ), )
+region = a.Set(vertices=verts1, name='Set-2')
+mdb.models['Model-1'].ConcentratedForce(name='Load-2', createStepName='Step-1', 
+    region=region, cf2=-5000.0, distributionType=UNIFORM, field='', 
+    localCsys=None)
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#8 ]', ), )
+region = a.Set(vertices=verts1, name='Set-3')
+mdb.models['Model-1'].ConcentratedForce(name='Load-3', createStepName='Step-1', 
+    region=region, cf2=-5000.0, distributionType=UNIFORM, field='', 
+    localCsys=None)
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#4 ]', ), )
+region = a.Set(vertices=verts1, name='Set-4')
+mdb.models['Model-1'].ConcentratedForce(name='Load-4', createStepName='Step-1', 
+    region=region, cf2=-3750.0, distributionType=UNIFORM, field='', 
+    localCsys=None)
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#10 ]', ), )
+region = a.Set(vertices=verts1, name='Set-5')
+mdb.models['Model-1'].ConcentratedForce(name='Load-5', createStepName='Step-1', 
+    region=region, cf2=-1250.0, distributionType=UNIFORM, field='', 
+    localCsys=None)
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#2 ]', ), )
+region = a.Set(vertices=verts1, name='Set-6')
+mdb.models['Model-1'].ConcentratedForce(name='Load-6', createStepName='Step-1', 
+    region=region, cf1=-5000.0, distributionType=UNIFORM, field='', 
+    localCsys=None)
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#40 ]', ), )
+region = a.Set(vertices=verts1, name='Set-7')
+mdb.models['Model-1'].ConcentratedForce(name='Load-7', createStepName='Step-1', 
+    region=region, cf2=-4000.0, distributionType=UNIFORM, field='', 
+    localCsys=None)
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#80 ]', ), )
+region = a.Set(vertices=verts1, name='Set-8')
+mdb.models['Model-1'].ConcentratedForce(name='Load-8', createStepName='Step-1', 
+    region=region, cf1=-7879.82983226595, distributionType=UNIFORM, field='', 
+    localCsys=None)
+mdb.models['Model-1'].loads['Load-8'].setValues(cf2=10606.6017177982, 
+    distributionType=UNIFORM, field='')
+mdb.models['Model-1'].loads['Load-8'].setValues(cf1=-10606.6017177982, 
+    cf2=-10606.6, distributionType=UNIFORM, field='')
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#1 ]', ), )
+region = a.Set(vertices=verts1, name='Set-9')
+mdb.models['Model-1'].PinnedBC(name='BC-1', createStepName='Step-1', 
+    region=region, localCsys=None)
+del mdb.models['Model-1'].boundaryConditions['BC-1']
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#1 ]', ), )
+region = a.Set(vertices=verts1, name='Set-10')
+mdb.models['Model-1'].DisplacementBC(name='BC-1', createStepName='Step-1', 
+    region=region, u1=0.0, u2=0.0, ur3=UNSET, amplitude=UNSET, fixed=OFF, 
+    distributionType=UNIFORM, fieldName='', localCsys=None)
+a = mdb.models['Model-1'].rootAssembly
+v1 = a.instances['Truss_Part-1'].vertices
+verts1 = v1.getSequenceFromMask(mask=('[#10 ]', ), )
+region = a.Set(vertices=verts1, name='Set-11')
+mdb.models['Model-1'].DisplacementBC(name='BC-2', createStepName='Step-1', 
+    region=region, u1=0.0, u2=UNSET, ur3=UNSET, amplitude=UNSET, fixed=OFF, 
+    distributionType=UNIFORM, fieldName='', localCsys=None)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=6246.67, 
+    farPlane=8114.39, width=6167.16, height=2481.28, viewOffsetX=-1332.08, 
+    viewOffsetY=-438.323)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(mesh=ON, loads=OFF, 
+    bcs=OFF, predefinedFields=OFF, connectors=OFF)
+session.viewports['Viewport: 1'].assemblyDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+session.viewports['Viewport: 1'].view.fitView()
+p = mdb.models['Model-1'].parts['Truss_Part']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+session.viewports['Viewport: 1'].partDisplay.setValues(sectionAssignments=OFF, 
+    engineeringFeatures=OFF, mesh=ON)
+session.viewports['Viewport: 1'].partDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+elemType1 = mesh.ElemType(elemCode=T2D2, elemLibrary=STANDARD)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+edges = e.getSequenceFromMask(mask=('[#7fffff ]', ), )
+pickedRegions =(edges, )
+p.setElementType(regions=pickedRegions, elemTypes=(elemType1, ))
+p = mdb.models['Model-1'].parts['Truss_Part']
+p.seedPart(size=130.0, deviationFactor=0.1, minSizeFactor=0.1)
+p = mdb.models['Model-1'].parts['Truss_Part']
+p.generateMesh()
+a = mdb.models['Model-1'].rootAssembly
+a.regenerate()
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(mesh=OFF, 
+    adaptiveMeshConstraints=ON)
+session.viewports['Viewport: 1'].assemblyDisplay.meshOptions.setValues(
+    meshTechnique=OFF)
+mdb.models['Model-1'].fieldOutputRequests['F-Output-1'].setValues(variables=(
+    'S', 'MISES', 'MISESMAX', 'TSHR', 'CTSHR', 'ALPHA', 'TRIAX', 'VS', 'PS', 
+    'CS11', 'ALPHAN', 'SSAVG', 'MISESONLY', 'PRESSONLY', 'SEQUT', 'YIELDPOT', 
+    'E', 'VE', 'PE', 'VEEQ', 'PEEQ', 'PEEQT', 'PEEQMAX', 'PEMAG', 'PEQC', 'EE', 
+    'IE', 'THE', 'NE', 'LE', 'TE', 'TEEQ', 'TEVOL', 'EEQUT', 'ER', 'SE', 'SPE', 
+    'SEPE', 'SEE', 'SEP', 'SALPHA', 'U', 'UT', 'UR', 'V', 'VT', 'VR', 'RBANG', 
+    'RBROT', 'RF', 'RT', 'RM', 'CF', 'SF', 'SQEQ', 'TF', 'VF', 'ESF1', 'NFORC', 
+    'NFORCSO', 'RBFOR', 'BF', 'CORIOMAG', 'ROTAMAG', 'CENTMAG', 'CENTRIFMAG', 
+    'GRAV', 'P', 'HP', 'TRSHR', 'TRNOR', 'CSTRESS', 'CSTRESSETOS', 'CLINELOAD', 
+    'CPOINTLOAD', 'CDSTRESS', 'CDISP', 'CDISPETOS', 'CTANDIR', 'CFORCE', 
+    'CNAREA', 'CSTATUS', 'PPRESS', 'ENER', 'ELEN', 'ELEDEN', 'DAMAGEC', 
+    'DAMAGET', 'DAMAGEFT', 'DAMAGEFC', 'DAMAGEMT', 'DAMAGEMC', 'DAMAGESHR', 
+    'SDEG', 'JK', 'CFAILURE', 'DBS', 'DBT', 'DBSF', 'OPENBC', 'CRSTS', 'ENRRT', 
+    'EFENRRTR', 'BDSTAT', 'DMICRT', 'HSNFTCRT', 'HSNFCCRT', 'HSNMTCRT', 
+    'HSNMCCRT', 'ERPRATIO', 'SHRRATIO', 'CSDMG', 'CSMAXSCRT', 'CSMAXUCRT', 
+    'CSQUADSCRT', 'CSQUADUCRT', 'PHILSM', 'PSILSM', 'ENRRTXFEM', 'MMIXDMI', 
+    'MMIXDME', 'SVOL', 'EVOL', 'ESOL', 'IVOL', 'STH', 'COORD', 'CSTRESSERI'))
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(
+    adaptiveMeshConstraints=OFF)
+mdb.Job(name='Job-1', model='Model-1', description='', type=ANALYSIS, 
+    atTime=None, waitMinutes=0, waitHours=0, queue=None, memory=90, 
+    memoryUnits=PERCENTAGE, getMemoryFromAnalysis=True, 
+    explicitPrecision=SINGLE, nodalOutputPrecision=SINGLE, echoPrint=OFF, 
+    modelPrint=OFF, contactPrint=OFF, historyPrint=OFF, userSubroutine='', 
+    scratch='', resultsFormat=ODB, multiprocessingMode=DEFAULT, numCpus=4, 
+    numDomains=4, numGPUs=0)
+mdb.jobs['Job-1'].submit(consistencyChecking=OFF)
+#: The job input file "Job-1.inp" has been submitted for analysis.
+#: Job Job-1: Analysis Input File Processor completed successfully.
+#: Job Job-1: Abaqus/Standard completed successfully.
+#: Job Job-1 completed successfully. 
+o3 = session.openOdb(name='C:/temp/Job-1.odb')
+#: Model: C:/temp/Job-1.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     1
+#: Number of Meshes:             1
+#: Number of Element Sets:       4
+#: Number of Node Sets:          15
+#: Number of Steps:              1
+session.viewports['Viewport: 1'].setValues(displayedObject=o3)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7682.44, 
+    farPlane=12627.2, width=4632.76, height=1863.93, viewOffsetX=462.155, 
+    viewOffsetY=2.26473)
+session.viewports['Viewport: 1'].odbDisplay.commonOptions.setValues(
+    elemLabels=ON)
+p = mdb.models['Model-1'].parts['Truss_Part']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+pickedRegions = e.getSequenceFromMask(mask=('[#400000 ]', ), )
+p.deleteMesh(regions=pickedRegions)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+pickedEdges = e.getSequenceFromMask(mask=('[#400000 ]', ), )
+p.seedEdgeByNumber(edges=pickedEdges, number=1, constraint=FINER)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+pickedRegions = e.getSequenceFromMask(mask=('[#100000 ]', ), )
+p.deleteMesh(regions=pickedRegions)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+pickedEdges = e.getSequenceFromMask(mask=('[#100000 ]', ), )
+p.seedEdgeByNumber(edges=pickedEdges, number=1, constraint=FINER)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+pickedRegions = e.getSequenceFromMask(mask=('[#200000 ]', ), )
+p.deleteMesh(regions=pickedRegions)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+pickedEdges = e.getSequenceFromMask(mask=('[#200000 ]', ), )
+p.seedEdgeByNumber(edges=pickedEdges, number=1, constraint=FINER)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+pickedRegions = e.getSequenceFromMask(mask=('[#c3800 ]', ), )
+p.deleteMesh(regions=pickedRegions)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+pickedEdges = e.getSequenceFromMask(mask=('[#c3800 ]', ), )
+p.seedEdgeByNumber(edges=pickedEdges, number=1, constraint=FINER)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+pickedRegions = e.getSequenceFromMask(mask=('[#3c7ff ]', ), )
+p.deleteMesh(regions=pickedRegions)
+p = mdb.models['Model-1'].parts['Truss_Part']
+e = p.edges
+pickedEdges = e.getSequenceFromMask(mask=('[#3c7ff ]', ), )
+p.seedEdgeByNumber(edges=pickedEdges, number=1, constraint=FINER)
+a1 = mdb.models['Model-1'].rootAssembly
+a1.regenerate()
+a = mdb.models['Model-1'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+mdb.jobs['Job-1'].submit(consistencyChecking=OFF)
+#: The job input file "Job-1.inp" has been submitted for analysis.
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(mesh=ON)
+session.viewports['Viewport: 1'].assemblyDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+p = mdb.models['Model-1'].parts['Truss_Part']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+#: Error in job Job-1: in keyword *BOUNDARY, file "Job-1.inp", line 43: Unknown assembly node set SET-10
+#: Error in job Job-1: in keyword *BOUNDARY, file "Job-1.inp", line 43: Unknown assembly node set SET-10
+#: Error in job Job-1: in keyword *BOUNDARY, file "Job-1.inp", line 47: Unknown assembly node set SET-11
+#: Error in job Job-1: in keyword *CLOAD, file "Job-1.inp", line 53: Unknown assembly set SET-1
+#: Error in job Job-1: in keyword *CLOAD, file "Job-1.inp", line 56: Unknown assembly set SET-2
+#: Error in job Job-1: in keyword *CLOAD, file "Job-1.inp", line 59: Unknown assembly set SET-3
+#: Error in job Job-1: in keyword *CLOAD, file "Job-1.inp", line 62: Unknown assembly set SET-4
+#: Error in job Job-1: in keyword *CLOAD, file "Job-1.inp", line 65: Unknown assembly set SET-5
+#: Error in job Job-1: in keyword *CLOAD, file "Job-1.inp", line 68: Unknown assembly set SET-6
+#: Error in job Job-1: in keyword *CLOAD, file "Job-1.inp", line 71: Unknown assembly set SET-7
+#: Error in job Job-1: in keyword *CLOAD, file "Job-1.inp", line 74: Unknown assembly set SET-8
+#: Error in job Job-1: in keyword *CLOAD, file "Job-1.inp", line 74: Unknown assembly set SET-8
+#: Error in job Job-1: THIS MODEL HAS EITHER INCORRECT OR NO ELEMENT DEFINITIONS.
+#: Job Job-1: Analysis Input File Processor aborted due to errors.
+p = mdb.models['Model-1'].parts['Truss_Part']
+p.generateMesh()
+a1 = mdb.models['Model-1'].rootAssembly
+a1.regenerate()
+a = mdb.models['Model-1'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(mesh=OFF)
+session.viewports['Viewport: 1'].assemblyDisplay.meshOptions.setValues(
+    meshTechnique=OFF)
+#: Error in job Job-1: Analysis Input File Processor exited with an error.
+#: Job Job-1 aborted due to errors.
+mdb.jobs['Job-1'].submit(consistencyChecking=OFF)
+#: The job input file "Job-1.inp" has been submitted for analysis.
+o3 = session.openOdb(name='C:/temp/Job-1.odb')
+#: Model: C:/temp/Job-1.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     0
+#: Number of Meshes:             0
+#: Number of Element Sets:       0
+#: Number of Node Sets:          0
+#: Number of Steps:              -1
+#: Warning: Odb file only contains user-defined data.
+session.viewports['Viewport: 1'].setValues(displayedObject=o3)
+session.viewports['Viewport: 1'].makeCurrent()
+a = mdb.models['Model-1'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+#: Job Job-1: Analysis Input File Processor completed successfully.
+#: Job Job-1: Abaqus/Standard completed successfully.
+#: Job Job-1 completed successfully. 
+session.viewports['Viewport: 1'].setValues(
+    displayedObject=session.odbs['C:/temp/Job-1.odb'])
+o3 = session.openOdb(name='C:/temp/Job-1.odb')
+#: Model: C:/temp/Job-1.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     1
+#: Number of Meshes:             1
+#: Number of Element Sets:       4
+#: Number of Node Sets:          15
+#: Number of Steps:              1
+session.viewports['Viewport: 1'].setValues(displayedObject=o3)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7857.96, 
+    farPlane=12451.6, width=3454.44, height=1389.85, viewOffsetX=-917.63, 
+    viewOffsetY=14.0673)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7868.89, 
+    farPlane=12440.7, width=3459.24, height=1391.78, viewOffsetX=-410.276, 
+    viewOffsetY=-64.7996)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7865.64, 
+    farPlane=12444, width=3842.01, height=1545.78, viewOffsetX=-362.32, 
+    viewOffsetY=-57.9388)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7815.33, 
+    farPlane=12494.3, width=3817.44, height=1535.9, viewOffsetX=-387.912, 
+    viewOffsetY=-60.6773)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(INVARIANT, 
+    'Max. In-Plane Principal'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(INVARIANT, 
+    'Mises'), )
+session.viewports['Viewport: 1'].animationController.setValues(
+    animationType=TIME_HISTORY)
+session.viewports['Viewport: 1'].animationController.play(duration=UNLIMITED)
+session.animationOptions.setValues(frameRate=31)
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='U', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='NFORC1', outputPosition=ELEMENT_NODAL, )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='RF', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='RT', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='RF', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].animationController.setValues(
+    animationType=NONE)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    UNDEFORMED, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=0, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='RF', outputPosition=NODAL, refinement=(COMPONENT, 'RF1'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='TF', outputPosition=NODAL, refinement=(INVARIANT, 
+    'Magnitude'), )
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='E', outputPosition=INTEGRATION_POINT, refinement=(INVARIANT, 
+    'Max. In-Plane Principal'), )
+session.viewports['Viewport: 1'].view.setValues(nearPlane=7760.1, 
+    farPlane=12549.5, width=4679.6, height=1882.77, viewOffsetX=-342.397, 
+    viewOffsetY=-87.7603)
+session.viewports['Viewport: 1'].animationController.setValues(
+    animationType=TIME_HISTORY)
+session.viewports['Viewport: 1'].animationController.play(duration=UNLIMITED)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    DEFORMED, ))
+session.viewports['Viewport: 1'].animationController.setValues(
+    animationType=TIME_HISTORY)
+session.viewports['Viewport: 1'].animationController.play(duration=UNLIMITED)
+session.animationOptions.setValues(frameRate=100)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].animationController.setValues(
+    animationType=TIME_HISTORY)
+session.viewports['Viewport: 1'].animationController.play(duration=UNLIMITED)
+session.viewports['Viewport: 1'].animationController.setValues(
+    animationType=NONE)
+session.viewports['Viewport: 1'].animationController.setValues(
+    animationType=TIME_HISTORY)
+session.viewports['Viewport: 1'].animationController.play(duration=UNLIMITED)
+session.viewports['Viewport: 1'].animationController.setValues(
+    animationType=NONE)
+a = mdb.models['Model-1'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(loads=ON, bcs=ON, 
+    predefinedFields=ON, connectors=ON)
+session.viewports['Viewport: 1'].setValues(
+    displayedObject=session.odbs['C:/temp/Job-1.odb'])
+odb = session.odbs['C:/temp/Job-1.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].animationController.setValues(
+    animationType=TIME_HISTORY)
+session.viewports['Viewport: 1'].animationController.play(duration=UNLIMITED)
+session.animationOptions.setValues(frameRate=84)
+session.animationOptions.setValues(frameRate=16)
+o1 = session.openOdb(name='D:/IFS/Tool_10/Job4T10.odb')
+session.viewports['Viewport: 1'].setValues(displayedObject=o1)
+#: Model: D:/IFS/Tool_10/Job4T10.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     3
+#: Number of Meshes:             3
+#: Number of Element Sets:       6
+#: Number of Node Sets:          12
+#: Number of Steps:              1
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    UNDEFORMED, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    DEFORMED, ))
+p = mdb.models['Model-1'].parts['Truss_Part']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+odb = session.odbs['D:/IFS/Tool_10/Job4T10.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+a = mdb.models['Model-1'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(loads=OFF, bcs=OFF, 
+    predefinedFields=OFF, connectors=OFF)
+session.viewports['Viewport: 1'].setValues(
+    displayedObject=session.odbs['D:/IFS/Tool_10/Job4T10.odb'])
+o3 = session.openOdb(name='C:/temp/Job-1.odb')
+session.viewports['Viewport: 1'].setValues(displayedObject=o3)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].odbDisplay.setPrimaryVariable(
+    variableLabel='S', outputPosition=INTEGRATION_POINT, refinement=(INVARIANT, 
+    'Pressure'), )
+mdb.saveAs(pathName='C:/temp/Feeeem')
+#: The model database has been saved to "C:\temp\Feeeem.cae".

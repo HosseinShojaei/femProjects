@@ -1,0 +1,988 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=200.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-60.0, 20.0), 
+    point2=(58.75, 20.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(58.75, 20.0), 
+    point2=(58.75, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[3])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[3])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(58.75, 0.0), point2=
+    (46.25, -6.25))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(46.25, -6.25), 
+    point2=(-60.0, 7.5))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-60.0, 7.5), point2=
+    (-60.0, 20.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-26.25, 20.0), 
+    point2=(-26.25, 3.13235294130652))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[7])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7])
+mdb.models['Model-1'].sketches['__profile__'].CoincidentConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[6], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-26.25, 
+    3.13235294130652), point2=(-60.0, 20.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-60.0, 7.5), point2=
+    (-26.25, 20.0))
+mdb.models['Model-1'].sketches['__profile__'].breakCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[8], curve2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[9], point1=(
+    -45.8107261657715, 13.544059753418), point2=(-49.288330078125, 
+    11.1302719116211))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(15.0, 20.0), point2=
+    (15.0, -2.2058823529763))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[12])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[12])
+mdb.models['Model-1'].sketches['__profile__'].CoincidentConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[8], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].sketches['__profile__'].CoincidentConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[9], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(15.0, 
+    -2.2058823529763), point2=(-26.25, 20.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(46.25, -6.25), 
+    point2=(46.25, 20.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[14])
+mdb.models['Model-1'].sketches['__profile__'].CoincidentConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[10], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(46.25, 20.0), 
+    point2=(58.75, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(15.0, 20.0), point2=
+    (46.25, -6.25))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(46.25, -6.25), 
+    point2=(58.75, 20.0))
+mdb.models['Model-1'].sketches['__profile__'].breakCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[15], curve2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[17], point1=(
+    51.2946624755859, 9.92337036132813), point2=(52.4984436035156, 
+    5.76628494262695))
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    -63.3324966430664, 13.2758636474609), value=0.4, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[4], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[0])
+mdb.models['Model-1'].sketches['__profile__'].undo()
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=1000.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-360.0, 55.0), 
+    point2=(-360.0, -200.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-360.0, -200.0), 
+    point2=(785.0, -370.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(785.0, -370.0), 
+    point2=(790.0, 100.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(790.0, 100.0), 
+    point2=(-360.0, 55.0))
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=1000.0)
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=10000.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0, 0.0), point2=(
+    0.0, 4050.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    -1789.7802734375, 1818.12841796875), value=400.0, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[0], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[1])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=10000.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0, 0.0), point2=(
+    0.0, 400.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0, 400.0), point2=
+    (1000.0, 400.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[3])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[3])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(1000.0, 400.0), 
+    point2=(2000.0, 400.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[4])
+mdb.models['Model-1'].sketches['__profile__'].ParallelConstraint(addUndoState=
+    False, entity1=mdb.models['Model-1'].sketches['__profile__'].geometry[3], 
+    entity2=mdb.models['Model-1'].sketches['__profile__'].geometry[4])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(2000.0, 400.0), 
+    point2=(3000.0, 400.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5])
+mdb.models['Model-1'].sketches['__profile__'].ParallelConstraint(addUndoState=
+    False, entity1=mdb.models['Model-1'].sketches['__profile__'].geometry[4], 
+    entity2=mdb.models['Model-1'].sketches['__profile__'].geometry[5])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(3000.0, 400.0), 
+    point2=(3500.0, 400.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].ParallelConstraint(addUndoState=
+    False, entity1=mdb.models['Model-1'].sketches['__profile__'].geometry[5], 
+    entity2=mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(3500.0, 400.0), 
+    point2=(3500.0, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[7])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(3500.0, 0.0), 
+    point2=(3000.0, -400.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(3000.0, -400.0), 
+    point2=(0.0, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(1000.0, 400.0), 
+    point2=(1000.0, -133.333333333293))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[10])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[3], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[10])
+mdb.models['Model-1'].sketches['__profile__'].CoincidentConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[8], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[9])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0, 400.0), point2=
+    (1000.0, -133.333333333293))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0, 0.0), point2=(
+    1000.0, 400.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(2000.0, 400.0), 
+    point2=(2000.0, -266.666666666589))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[13])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[4], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[13])
+mdb.models['Model-1'].sketches['__profile__'].CoincidentConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[9], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[9])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(1000.0, 400.0), 
+    point2=(2000.0, -266.666666666589))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(3000.0, 400.0), 
+    point2=(3000.0, -400.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[15])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[15])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(2000.0, 400.0), 
+    point2=(3000.0, -400.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(3000.0, -400.0), 
+    point2=(3500.0, 400.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(3000.0, 400.0), 
+    point2=(3500.0, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].breakCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[12], curve2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[11], point1=(
+    265.563354492188, 107.393951416016), point2=(297.550415039063, 
+    242.799407958984))
+mdb.models['Model-1'].sketches['__profile__'].breakCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[18], curve2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[17], point1=(
+    3133.73681640625, 264.179290771484), point2=(3254.57666015625, 
+    43.2544860839844))
+mdb.models['Model-1'].Part(dimensionality=TWO_D_PLANAR, name='Truss_Part', 
+    type=DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['Truss_Part'].BaseWire(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].Material(name='Material-1')
+mdb.models['Model-1'].materials['Material-1'].Elastic(table=((210000000000.0, 
+    0.3), ))
+mdb.models['Model-1'].Material(name='Material-2')
+mdb.models['Model-1'].materials['Material-2'].Elastic(table=((200000000000.0, 
+    0.3), ))
+mdb.models['Model-1'].Material(name='Material-3')
+mdb.models['Model-1'].materials['Material-3'].Elastic(table=((195000000000.0, 
+    0.3), ))
+mdb.models['Model-1'].TrussSection(area=0.000924, material='Material-1', name=
+    'Section-1')
+mdb.models['Model-1'].parts['Truss_Part'].Set(edges=
+    mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#404024 ]', ), ), name='Set-1')
+mdb.models['Model-1'].parts['Truss_Part'].SectionAssignment(offset=0.0, 
+    offsetField='', offsetType=MIDDLE_SURFACE, region=
+    mdb.models['Model-1'].parts['Truss_Part'].sets['Set-1'], sectionName=
+    'Section-1', thicknessAssignment=FROM_SECTION)
+mdb.models['Model-1'].TrussSection(area=0.000684, material='Material-2', name=
+    'Section-2')
+mdb.models['Model-1'].parts['Truss_Part'].Set(edges=
+    mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#148012 ]', ), ), name='Set-2')
+mdb.models['Model-1'].parts['Truss_Part'].SectionAssignment(offset=0.0, 
+    offsetField='', offsetType=MIDDLE_SURFACE, region=
+    mdb.models['Model-1'].parts['Truss_Part'].sets['Set-2'], sectionName=
+    'Section-2', thicknessAssignment=FROM_SECTION)
+mdb.models['Model-1'].TrussSection(area=0.000384, material='Material-3', name=
+    'Section-3')
+mdb.models['Model-1'].parts['Truss_Part'].Set(edges=
+    mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#2b3fc9 ]', ), ), name='Set-3')
+mdb.models['Model-1'].parts['Truss_Part'].SectionAssignment(offset=0.0, 
+    offsetField='', offsetType=MIDDLE_SURFACE, region=
+    mdb.models['Model-1'].parts['Truss_Part'].sets['Set-3'], sectionName=
+    'Section-3', thicknessAssignment=FROM_SECTION)
+mdb.models['Model-1'].BoxProfile(a=0.06, b=0.1, name='Profile-1', t1=0.003, 
+    uniformThickness=ON)
+mdb.models['Model-1'].BoxProfile(a=0.06, b=0.06, name='Profile-2', t1=0.003, 
+    uniformThickness=ON)
+mdb.models['Model-1'].BoxProfile(a=0.04, b=0.06, name='Profile-3', t1=0.002, 
+    uniformThickness=ON)
+mdb.models['Model-1'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['Model-1'].rootAssembly.Instance(dependent=ON, name='Truss_Part-1', 
+    part=mdb.models['Model-1'].parts['Truss_Part'])
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=10000.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-2600.0, 1150.0), 
+    point2=(1900.0, -350.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(1900.0, -350.0), 
+    point2=(1000.0, -700.0))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(1000.0, -700.0), 
+    point2=(-1800.0, -700.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[4])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-1800.0, -700.0), 
+    point2=(-2600.0, 1150.0))
+mdb.models['Model-1'].Part(dimensionality=THREE_D, name='Part-2', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['Part-2'].BaseWire(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].BoxProfile(a=5383.0, b=83538.0, name='Profile-4', t1=22.0
+    , uniformThickness=ON)
+del mdb.models['Model-1'].profiles['Profile-4']
+del mdb.models['Model-1'].parts['Part-2']
+mdb.models['Model-1'].StaticStep(name='Step-1', previous='Initial')
+mdb.models['Model-1'].rootAssembly.Set(name='Set-1', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#800 ]', ), ))
+mdb.models['Model-1'].ConcentratedForce(cf2=-2500.0, createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, name='Load-1', region=
+    mdb.models['Model-1'].rootAssembly.sets['Set-1'])
+mdb.models['Model-1'].rootAssembly.Set(name='Set-2', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#400 ]', ), ))
+mdb.models['Model-1'].ConcentratedForce(cf2=-5000.0, createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, name='Load-2', region=
+    mdb.models['Model-1'].rootAssembly.sets['Set-2'])
+mdb.models['Model-1'].rootAssembly.Set(name='Set-3', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#8 ]', ), ))
+mdb.models['Model-1'].ConcentratedForce(cf2=-5000.0, createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, name='Load-3', region=
+    mdb.models['Model-1'].rootAssembly.sets['Set-3'])
+mdb.models['Model-1'].rootAssembly.Set(name='Set-4', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#4 ]', ), ))
+mdb.models['Model-1'].ConcentratedForce(cf2=-3750.0, createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, name='Load-4', region=
+    mdb.models['Model-1'].rootAssembly.sets['Set-4'])
+mdb.models['Model-1'].rootAssembly.Set(name='Set-5', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#10 ]', ), ))
+mdb.models['Model-1'].ConcentratedForce(cf2=-1250.0, createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, name='Load-5', region=
+    mdb.models['Model-1'].rootAssembly.sets['Set-5'])
+mdb.models['Model-1'].rootAssembly.Set(name='Set-6', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#2 ]', ), ))
+mdb.models['Model-1'].ConcentratedForce(cf1=-5000.0, createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, name='Load-6', region=
+    mdb.models['Model-1'].rootAssembly.sets['Set-6'])
+mdb.models['Model-1'].rootAssembly.Set(name='Set-7', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#40 ]', ), ))
+mdb.models['Model-1'].ConcentratedForce(cf2=-4000.0, createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, name='Load-7', region=
+    mdb.models['Model-1'].rootAssembly.sets['Set-7'])
+mdb.models['Model-1'].rootAssembly.Set(name='Set-8', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#80 ]', ), ))
+mdb.models['Model-1'].ConcentratedForce(cf1=-7879.82983226595, createStepName=
+    'Step-1', distributionType=UNIFORM, field='', localCsys=None, name='Load-8'
+    , region=mdb.models['Model-1'].rootAssembly.sets['Set-8'])
+mdb.models['Model-1'].loads['Load-8'].setValues(cf2=10606.6017177982, 
+    distributionType=UNIFORM, field='')
+mdb.models['Model-1'].loads['Load-8'].setValues(cf1=-10606.6017177982, cf2=
+    -10606.6, distributionType=UNIFORM, field='')
+mdb.models['Model-1'].rootAssembly.Set(name='Set-9', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#1 ]', ), ))
+mdb.models['Model-1'].PinnedBC(createStepName='Step-1', localCsys=None, name=
+    'BC-1', region=mdb.models['Model-1'].rootAssembly.sets['Set-9'])
+del mdb.models['Model-1'].boundaryConditions['BC-1']
+mdb.models['Model-1'].rootAssembly.Set(name='Set-10', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#1 ]', ), ))
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'BC-1', region=mdb.models['Model-1'].rootAssembly.sets['Set-10'], u1=0.0, 
+    u2=0.0, ur3=UNSET)
+mdb.models['Model-1'].rootAssembly.Set(name='Set-11', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Truss_Part-1'].vertices.getSequenceFromMask(
+    ('[#10 ]', ), ))
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'BC-2', region=mdb.models['Model-1'].rootAssembly.sets['Set-11'], u1=0.0, 
+    u2=UNSET, ur3=UNSET)
+mdb.models['Model-1'].parts['Truss_Part'].setElementType(elemTypes=(ElemType(
+    elemCode=T2D2, elemLibrary=STANDARD), ), regions=(
+    mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#7fffff ]', ), ), ))
+mdb.models['Model-1'].parts['Truss_Part'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=130.0)
+mdb.models['Model-1'].parts['Truss_Part'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.models['Model-1'].fieldOutputRequests['F-Output-1'].setValues(variables=(
+    'S', 'MISES', 'MISESMAX', 'TSHR', 'CTSHR', 'ALPHA', 'TRIAX', 'VS', 'PS', 
+    'CS11', 'ALPHAN', 'SSAVG', 'MISESONLY', 'PRESSONLY', 'SEQUT', 'YIELDPOT', 
+    'E', 'VE', 'PE', 'VEEQ', 'PEEQ', 'PEEQT', 'PEEQMAX', 'PEMAG', 'PEQC', 'EE', 
+    'IE', 'THE', 'NE', 'LE', 'TE', 'TEEQ', 'TEVOL', 'EEQUT', 'ER', 'SE', 'SPE', 
+    'SEPE', 'SEE', 'SEP', 'SALPHA', 'U', 'UT', 'UR', 'V', 'VT', 'VR', 'RBANG', 
+    'RBROT', 'RF', 'RT', 'RM', 'CF', 'SF', 'SQEQ', 'TF', 'VF', 'ESF1', 'NFORC', 
+    'NFORCSO', 'RBFOR', 'BF', 'CORIOMAG', 'ROTAMAG', 'CENTMAG', 'CENTRIFMAG', 
+    'GRAV', 'P', 'HP', 'TRSHR', 'TRNOR', 'CSTRESS', 'CSTRESSETOS', 'CLINELOAD', 
+    'CPOINTLOAD', 'CDSTRESS', 'CDISP', 'CDISPETOS', 'CTANDIR', 'CFORCE', 
+    'CNAREA', 'CSTATUS', 'PPRESS', 'ENER', 'ELEN', 'ELEDEN', 'DAMAGEC', 
+    'DAMAGET', 'DAMAGEFT', 'DAMAGEFC', 'DAMAGEMT', 'DAMAGEMC', 'DAMAGESHR', 
+    'SDEG', 'JK', 'CFAILURE', 'DBS', 'DBT', 'DBSF', 'OPENBC', 'CRSTS', 'ENRRT', 
+    'EFENRRTR', 'BDSTAT', 'DMICRT', 'HSNFTCRT', 'HSNFCCRT', 'HSNMTCRT', 
+    'HSNMCCRT', 'ERPRATIO', 'SHRRATIO', 'CSDMG', 'CSMAXSCRT', 'CSMAXUCRT', 
+    'CSQUADSCRT', 'CSQUADUCRT', 'PHILSM', 'PSILSM', 'ENRRTXFEM', 'MMIXDMI', 
+    'MMIXDME', 'SVOL', 'EVOL', 'ESOL', 'IVOL', 'STH', 'COORD', 'CSTRESSERI'))
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='Job-1', nodalOutputPrecision=SINGLE, 
+    numCpus=4, numDomains=4, numGPUs=0, queue=None, resultsFormat=ODB, scratch=
+    '', type=ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['Job-1'].submit(consistencyChecking=OFF)
+mdb.jobs['Job-1']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'DESKTOP-315KVSI', 'handle': 0, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'FOR TWO-DIMENSIONAL MODELS, IF A NON-UNITY THICKNESS IS SPECIFIED FOR TWO-DIMENSIONAL SOLID ELEMENTS AND THESE ELEMENTS ARE INVOLVED IN AN INTERACTION SUCH AS CONTACT, THE SAME THICKNESS SHOULD BE SPECIFIED FOR THE OUT-OF-PLANE THICKNESS OF THE CORRESPONDING SURFACE UNDER *SURFACE INTERACTION.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST V IS NOT AVAILABLE FOR THIS TYPE OF ANALYSIS', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST VF IS NOT AVAILABLE FOR THIS TYPE OF ANALYSIS', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST VT IS NOT AVAILABLE FOR THIS TYPE OF ANALYSIS', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'THE REQUEST FOR MISES OUTPUT WILL BE REPLACED BY A REQUEST FOR S OUTPUT', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE ALPHAN HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE CFAILURE HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST NE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST YIELDPOT IS NOT AVAILABLE FOR THIS TYPE OF ANALYSIS', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST CS11 IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST CTSHR IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST MMIXDME IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST MMIXDMI IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SEPE IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SPE IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST TSHR IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ESOL IS NOT AVAILABLE FOR THIS TYPE OF ANALYSIS', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SQEQ IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ESF1 IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SALPHA IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SE IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SEE IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SEP IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SF IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SSAVG IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST STH IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SVOL IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST NFORCSO IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\Job-1.odb', 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'DESKTOP-315KVSI', 'handle': 17076, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'Job-1', 'memory': 24.0})
+mdb.jobs['Job-1']._Message(PHYSICAL_MEMORY, {'phase': STANDARD_PHASE, 
+    'physical_memory': 12184.0, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(MINIMUM_MEMORY, {'minimum_memory': 17.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 33 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 32 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 63 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 31 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 16 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 15 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 107 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 29 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 37 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 36 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 34 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 70 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 69 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 71 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 35 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'SOLVER PROBLEM.  ZERO PIVOT WHEN PROCESSING NODE 14 INSTANCE TRUSS_PART-1 D.O.F. 2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing D.O.F. 2 of 16 nodes. The nodes have been identified in node set WarnNodeSolvProbZeroPiv_2_1_1_1_1.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'The system matrix has 6 negative eigenvalues.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.30 D.O.F. 2 ratio = 15.6805E+15 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.53 D.O.F. 2 ratio = 1.08485E+12.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.54 D.O.F. 2 ratio = 3.62856E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.52 D.O.F. 2 ratio = 16.9455E+15 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.57 D.O.F. 2 ratio = 4.33609E+12.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.66 D.O.F. 2 ratio = 18.6949E+12 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.68 D.O.F. 2 ratio = 76.0260E+12 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.104 D.O.F. 2 ratio = 1.25684E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.109 D.O.F. 2 ratio = 7.74291E+12.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.108 D.O.F. 2 ratio = 18.7688E+15 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.73 D.O.F. 2 ratio = 72.3597E+12 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.72 D.O.F. 2 ratio = 12.3011E+15 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.91 D.O.F. 2 ratio = 6.46480E+12.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.94 D.O.F. 2 ratio = 2.58980E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.49 D.O.F. 2 ratio = 290.214E+09  .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.48 D.O.F. 2 ratio = 4.92109E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.97 D.O.F. 2 ratio = 410.913E+09  .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.47 D.O.F. 2 ratio = 284.434E+09  .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.46 D.O.F. 2 ratio = 3.67716E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.61 D.O.F. 2 ratio = 4.33609E+12.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.64 D.O.F. 2 ratio = 5.70195E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.65 D.O.F. 2 ratio = 1.75445E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.67 D.O.F. 2 ratio = 33.9465E+15 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.75 D.O.F. 2 ratio = 13.4409E+12 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.74 D.O.F. 2 ratio = 1.44154E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.76 D.O.F. 2 ratio = 363.735E+12  .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.96 D.O.F. 2 ratio = 5.92822E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.95 D.O.F. 2 ratio = 6.45775E+12.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.13 D.O.F. 2 ratio = 7.84025E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.45 D.O.F. 2 ratio = 443.494E+09  .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.56 D.O.F. 2 ratio = 1.08485E+12.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.55 D.O.F. 2 ratio = 11.4039E+15 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.51 D.O.F. 2 ratio = 1.08485E+12.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.50 D.O.F. 2 ratio = 1.90065E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.44 D.O.F. 2 ratio = 59.2960E+12 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.43 D.O.F. 2 ratio = 7.05623E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.59 D.O.F. 2 ratio = 4.33609E+12.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.58 D.O.F. 2 ratio = 3.09422E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.60 D.O.F. 2 ratio = 2.43081E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.62 D.O.F. 2 ratio = 3.25826E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.102 D.O.F. 2 ratio = 10.6512E+12 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.101 D.O.F. 2 ratio = 2.51368E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.103 D.O.F. 2 ratio = 14.0766E+15 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.77 D.O.F. 2 ratio = 9.51512E+12.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.89 D.O.F. 2 ratio = 247.009E+12  .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.90 D.O.F. 2 ratio = 2.00214E+15.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.93 D.O.F. 2 ratio = 197.607E+12  .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Numerical singularity when processing node TRUSS_PART-1.92 D.O.F. 2 ratio = 10.0091E+15 .', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.33 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.32 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.63 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.31 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.16 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.15 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.107 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.29 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.37 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.36 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.34 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.70 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.69 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.71 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.35 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'Solver problem. Zero pivot when processing node TRUSS_PART-1.14 D.O.F. 2.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'Job-1', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['Job-1']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(JOB_COMPLETED, {'time': 'Thu Jul  1 18:20:43 2021', 
+    'jobName': 'Job-1'})
+mdb.models['Model-1'].parts['Truss_Part'].deleteMesh(regions=
+    mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#400000 ]', ), ))
+mdb.models['Model-1'].parts['Truss_Part'].seedEdgeByNumber(constraint=FINER, 
+    edges=mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#400000 ]', ), ), number=1)
+mdb.models['Model-1'].parts['Truss_Part'].deleteMesh(regions=
+    mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#100000 ]', ), ))
+mdb.models['Model-1'].parts['Truss_Part'].seedEdgeByNumber(constraint=FINER, 
+    edges=mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#100000 ]', ), ), number=1)
+mdb.models['Model-1'].parts['Truss_Part'].deleteMesh(regions=
+    mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#200000 ]', ), ))
+mdb.models['Model-1'].parts['Truss_Part'].seedEdgeByNumber(constraint=FINER, 
+    edges=mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#200000 ]', ), ), number=1)
+mdb.models['Model-1'].parts['Truss_Part'].deleteMesh(regions=
+    mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#c3800 ]', ), ))
+mdb.models['Model-1'].parts['Truss_Part'].seedEdgeByNumber(constraint=FINER, 
+    edges=mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#c3800 ]', ), ), number=1)
+mdb.models['Model-1'].parts['Truss_Part'].deleteMesh(regions=
+    mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#3c7ff ]', ), ))
+mdb.models['Model-1'].parts['Truss_Part'].seedEdgeByNumber(constraint=FINER, 
+    edges=mdb.models['Model-1'].parts['Truss_Part'].edges.getSequenceFromMask((
+    '[#3c7ff ]', ), ), number=1)
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['Job-1'].submit(consistencyChecking=OFF)
+mdb.jobs['Job-1']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'DESKTOP-315KVSI', 'handle': 0, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *BOUNDARY, file "Job-1.inp", line 43: Unknown assembly node set SET-10', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *BOUNDARY, file "Job-1.inp", line 43: Unknown assembly node set SET-10', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *BOUNDARY, file "Job-1.inp", line 47: Unknown assembly node set SET-11', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *CLOAD, file "Job-1.inp", line 53: Unknown assembly set SET-1', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *CLOAD, file "Job-1.inp", line 56: Unknown assembly set SET-2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *CLOAD, file "Job-1.inp", line 59: Unknown assembly set SET-3', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *CLOAD, file "Job-1.inp", line 62: Unknown assembly set SET-4', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *CLOAD, file "Job-1.inp", line 65: Unknown assembly set SET-5', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *CLOAD, file "Job-1.inp", line 68: Unknown assembly set SET-6', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *CLOAD, file "Job-1.inp", line 71: Unknown assembly set SET-7', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *CLOAD, file "Job-1.inp", line 74: Unknown assembly set SET-8', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'in keyword *CLOAD, file "Job-1.inp", line 74: Unknown assembly set SET-8', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'THIS MODEL HAS EITHER INCORRECT OR NO ELEMENT DEFINITIONS.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ABORTED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'Job-1'})
+mdb.models['Model-1'].parts['Truss_Part'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['Job-1']._Message(ERROR, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(JOB_ABORTED, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1'].submit(consistencyChecking=OFF)
+mdb.jobs['Job-1']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'DESKTOP-315KVSI', 'handle': 0, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'FOR TWO-DIMENSIONAL MODELS, IF A NON-UNITY THICKNESS IS SPECIFIED FOR TWO-DIMENSIONAL SOLID ELEMENTS AND THESE ELEMENTS ARE INVOLVED IN AN INTERACTION SUCH AS CONTACT, THE SAME THICKNESS SHOULD BE SPECIFIED FOR THE OUT-OF-PLANE THICKNESS OF THE CORRESPONDING SURFACE UNDER *SURFACE INTERACTION.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST V IS NOT AVAILABLE FOR THIS TYPE OF ANALYSIS', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST VF IS NOT AVAILABLE FOR THIS TYPE OF ANALYSIS', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST VT IS NOT AVAILABLE FOR THIS TYPE OF ANALYSIS', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'THE REQUEST FOR MISES OUTPUT WILL BE REPLACED BY A REQUEST FOR S OUTPUT', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE ALPHAN HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE CFAILURE HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST NE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST YIELDPOT IS NOT AVAILABLE FOR THIS TYPE OF ANALYSIS', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST CS11 IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST CTSHR IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST MMIXDME IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST MMIXDMI IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SEPE IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SPE IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST TSHR IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ESOL IS NOT AVAILABLE FOR THIS TYPE OF ANALYSIS', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SQEQ IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ESF1 IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SALPHA IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SE IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SEE IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SEP IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SF IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SSAVG IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST STH IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SVOL IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST NFORCSO IS NOT AVAILABLE FOR ELEMENT TYPE T2D2', 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\Job-1.odb', 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'DESKTOP-315KVSI', 'handle': 16804, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'Job-1', 'memory': 24.0})
+mdb.jobs['Job-1']._Message(PHYSICAL_MEMORY, {'phase': STANDARD_PHASE, 
+    'physical_memory': 12184.0, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(MINIMUM_MEMORY, {'minimum_memory': 17.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'Job-1', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['Job-1']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(JOB_COMPLETED, {'time': 'Thu Jul  1 18:29:30 2021', 
+    'jobName': 'Job-1'})
+# Save by Administrator on 2021_07_01-21.08.40; build 2021 2020_03_06-18.20.37 167380
+# Save by Administrator on 2021_07_03-01.48.53; build 2021 2020_03_06-18.20.37 167380
